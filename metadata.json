@@ -1,0 +1,6 @@
+{
+  "name": "Happy Birthday Khushi",
+  "description": "An interactive, animated birthday surprise experience for best friend Khushi with candles, memories, and mini surprises.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
