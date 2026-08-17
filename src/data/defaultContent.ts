@@ -117,7 +117,7 @@ export const defaultBirthdayConfig: BirthdayConfig = {
   secretNote: 'Getting completely soaked and still making it look like a movie scene. 😂❤️'
 }
   ],
-  videoUrl: '/WhatsApp Video 2026-08-14 at 1.11.51 PM.mp4',
+  videoUrl: 'surprise-video-1.mp4',
   videoTitle: 'Special Birthday Montage for Khushi 🎬✨',
   videoCaption: 'A cute little friendship video reel filled with smiles, happiness & warm memories! 💖',
   musicType: 'custom',
