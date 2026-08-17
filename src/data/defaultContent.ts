@@ -82,7 +82,40 @@ export const defaultBirthdayConfig: BirthdayConfig = {
       tag: 'Iconic',
       sticker: '💖',
       secretNote: 'I know you have little brain in your knee 😂 but you have lots of beauty brohhhhhh ✨ '
-    }
+    },
+    {
+  id: 'p7',
+  url: '/Memory7.jpeg',
+  title: 'Snowy Memories ❄️',
+  caption: 'Some moments are worth keeping forever.',
+  date: 'Winter Memories',
+  rotation: -2,
+  tag: 'Beautiful',
+  sticker: '❄️',
+  secretNote: 'A memory that deserves its own little place in this crazy friendship. ❤️'
+},
+{
+  id: 'p8',
+  url: '/Memory8.jpeg',
+  title: 'Ocean & You 🌊',
+  caption: 'You + sunshine + a little bit of magic.',
+  date: 'Beach Vibes',
+  rotation: 2,
+  tag: 'Beautiful',
+  sticker: '🌊',
+  secretNote: 'Some views are beautiful... and then there is the person standing in the view. 👀❤️'
+},
+{
+  id: 'p9',
+  url: '/Memory9.jpeg',
+  title: 'Rainy Day Magic 🌧️',
+  caption: 'Even the rain couldn’t ruin this moment.',
+  date: 'Monsoon Memories',
+  rotation: -1.5,
+  tag: 'Memories',
+  sticker: '🌧️',
+  secretNote: 'Getting completely soaked and still making it look like a movie scene. 😂❤️'
+}
   ],
   videoUrl: '/WhatsApp Video 2026-08-14 at 1.11.51 PM.mp4',
   videoTitle: 'Special Birthday Montage for Khushi 🎬✨',

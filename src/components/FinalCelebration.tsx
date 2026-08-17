@@ -170,7 +170,150 @@ export const FinalCelebration: React.FC<FinalCelebrationProps> = ({
         videoCaption={config.videoCaption}
         onUpdateVideoUrl={onUpdateVideoUrl}
       />
+           {/* FINAL FRIENDSHIP MESSAGE */}
+      <motion.section
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1 }}
+        className="relative w-full max-w-3xl mt-16 mb-10"
+      >
+        {/* Soft glowing background */}
+        <div className="absolute inset-0 bg-pink-500/10 blur-3xl rounded-full" />
 
+        <div className="relative overflow-hidden rounded-[2rem] border border-pink-500/30 bg-slate-950/80 backdrop-blur-2xl px-6 py-12 sm:px-12 sm:py-16 shadow-[0_0_70px_rgba(236,72,153,0.15)]">
+
+          {/* Decorative sparkles */}
+          <motion.div
+            animate={{
+              opacity: [0.3, 1, 0.3],
+              scale: [0.8, 1.1, 0.8],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+            className="absolute top-8 left-8 text-pink-300 text-xl"
+          >
+            ✨
+          </motion.div>
+
+          <motion.div
+            animate={{
+              opacity: [0.3, 1, 0.3],
+              scale: [0.8, 1.1, 0.8],
+            }}
+            transition={{
+              duration: 3,
+              repeat: Infinity,
+              ease: 'easeInOut',
+              delay: 0.8,
+            }}
+            className="absolute top-12 right-10 text-purple-300 text-xl"
+          >
+            ✨
+          </motion.div>
+
+          {/* Infinity symbol */}
+          <motion.div
+            animate={{
+              scale: [1, 1.08, 1],
+              opacity: [0.8, 1, 0.8],
+            }}
+            transition={{
+              duration: 2.5,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+            className="text-5xl sm:text-6xl mb-6"
+          >
+            ♾️
+          </motion.div>
+
+          {/* Heading */}
+          <h2 className="text-3xl sm:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-rose-300 to-purple-300 tracking-tight leading-tight">
+            ONE THING
+            <br />
+            THAT WON&apos;T
+            <br />
+            CHANGE
+          </h2>
+
+          {/* Divider */}
+          <div className="w-24 h-px bg-gradient-to-r from-transparent via-pink-400 to-transparent mx-auto my-8" />
+
+          {/* Message */}
+          <div className="space-y-5 text-slate-200">
+            <p className="text-lg sm:text-xl leading-relaxed">
+              No matter how much
+              <br />
+              life changes...
+            </p>
+
+            <p className="text-lg sm:text-xl leading-relaxed">
+              No matter where
+              <br />
+              we end up...
+            </p>
+
+            <p className="text-lg sm:text-xl leading-relaxed font-medium text-pink-100">
+              I&apos;ll always be glad
+              <br />
+              that I got to call
+              <br />
+              you my best friend.
+            </p>
+          </div>
+
+          {/* Heart */}
+          <motion.div
+            animate={{
+              scale: [1, 1.15, 1],
+            }}
+            transition={{
+              duration: 1.8,
+              repeat: Infinity,
+              ease: 'easeInOut',
+            }}
+            className="text-3xl mt-8"
+          >
+            ❤️
+          </motion.div>
+
+          {/* Signature */}
+          <p className="font-handwriting text-4xl sm:text-5xl font-bold text-amber-300 mt-5">
+            — Dinesh
+          </p>
+
+          {/* THE END */}
+          <div className="mt-12 pt-8 border-t border-slate-800/80">
+            <motion.div
+              animate={{
+                opacity: [0.65, 1, 0.65],
+              }}
+              transition={{
+                duration: 2.5,
+                repeat: Infinity,
+                ease: 'easeInOut',
+              }}
+            >
+              <p className="text-xs uppercase tracking-[0.4em] text-slate-500 mb-3">
+                And that&apos;s...
+              </p>
+
+              <h3 className="text-3xl sm:text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-pink-400 to-purple-400">
+                ✨ THE END ✨
+              </h3>
+
+              <p className="text-sm text-slate-500 mt-4">
+                Some friendships are simply forever. ♾️
+              </p>
+            </motion.div>
+          </div>
+
+        </div>
+      </motion.section>
       {/* Footer credits */}
       <footer className="mt-12 text-slate-500 text-xs flex flex-col items-center gap-2">
         <p>
