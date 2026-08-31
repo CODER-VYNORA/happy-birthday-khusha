@@ -439,6 +439,99 @@ export const SurpriseVideoReveal: React.FC<SurpriseVideoRevealProps> = ({
 
             </div>
 
+                    {/* ================= QR CODE DOWNLOAD SECTION ================= */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="w-full mt-6"
+            >
+              <div className="relative overflow-hidden rounded-2xl border border-pink-500/30 bg-gradient-to-br from-pink-500/10 via-purple-500/10 to-amber-500/10 p-5 sm:p-6">
+
+                {/* Decorative Glow */}
+                <div className="absolute -top-16 -right-16 w-32 h-32 bg-pink-500/20 rounded-full blur-3xl pointer-events-none" />
+                <div className="absolute -bottom-16 -left-16 w-32 h-32 bg-purple-500/20 rounded-full blur-3xl pointer-events-none" />
+
+                {/* Heading */}
+                <div className="relative z-10 text-center mb-5">
+                  <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-500/15 border border-pink-500/20 mb-3">
+                    <span className="text-pink-300 text-sm">📱✨</span>
+                    <span className="text-pink-200 text-xs sm:text-sm font-semibold">
+                      Want To See It Clearly?
+                    </span>
+                  </div>
+
+                  <h4 className="text-xl sm:text-2xl font-bold text-white">
+                    Download The Clear Video 🎬
+                  </h4>
+
+                  <p className="text-xs sm:text-sm text-slate-400 mt-2 max-w-md mx-auto">
+                    If the video quality here isn't clear enough,
+                    scan the QR code below to download and watch the
+                    original quality video. ❤️
+                  </p>
+                </div>
+
+                {/* QR Codes */}
+                <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-xl mx-auto">
+
+                  {/* QR CODE 1 */}
+                  <div className="flex flex-col items-center">
+                    <div className="bg-white rounded-2xl p-3 shadow-xl shadow-pink-500/10 border-2 border-pink-300/30">
+                      <img
+                        src="/qr-video-1.jpeg"
+                        alt="QR code to download surprise video 1"
+                        className="w-40 h-40 sm:w-44 sm:h-44 object-contain"
+                      />
+                    </div>
+
+                    <p className="text-pink-200 font-semibold text-sm mt-3">
+                      🎬 Surprise Video 1
+                    </p>
+
+                    <p className="text-slate-500 text-xs mt-1">
+                      Scan to download HD video
+                    </p>
+                  </div>
+
+                  {/* QR CODE 2 */}
+                  <div className="flex flex-col items-center">
+                    <div className="bg-white rounded-2xl p-3 shadow-xl shadow-purple-500/10 border-2 border-purple-300/30">
+                      <img
+                        src="/qr-video-2.jpeg"
+                        alt="QR code to download surprise video 2"
+                        className="w-40 h-40 sm:w-44 sm:h-44 object-contain"
+                      />
+                    </div>
+
+                    <p className="text-purple-200 font-semibold text-sm mt-3">
+                      ✨ Surprise Video 2
+                    </p>
+
+                    <p className="text-slate-500 text-xs mt-1">
+                      Scan to download HD video
+                    </p>
+                  </div>
+
+                </div>
+
+                {/* Bottom Message */}
+                <div className="relative z-10 mt-5 pt-4 border-t border-white/10 text-center">
+                  <p className="text-xs sm:text-sm text-slate-400">
+                    📲 Scan • Download • Watch in full quality
+                  </p>
+
+                  <p className="text-pink-300/80 text-xs mt-1">
+                    A little memory worth keeping forever. ♾️❤️
+                  </p>
+                </div>
+
+              </div>
+            </motion.div>
+            {/* ================= END QR CODE DOWNLOAD SECTION ================= */}
+
+
+
             {/* Caption */}
             <div className="mt-4 space-y-2 text-center">
               <p className="text-pink-300 font-medium text-base">
